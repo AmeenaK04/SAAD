@@ -28,6 +28,7 @@ The key architectural challenge was selecting a suitable notification system to 
 
 Currently the CMS uses asynchronous background processing for notifications, I have decided to implement using Celery as the task queue and Redis as the message broker. Notification related tasks, such as escalation alerts, OTP alerts and if the ticket has been resolved, 
 are placed onto a background queue and processed independently of the main backend API. Ensuring that user facing API requests remain responsive while notifications are delivered promptly in the background.
+
 ---
 
 ## Rationale
