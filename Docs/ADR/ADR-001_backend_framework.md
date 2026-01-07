@@ -1,4 +1,6 @@
 ## Context and Problem Statement
+
+
 ABC limited requires the CMS system to be used by major companies such as banking, telecom and airlines. The CMS system must be capable of supporting and operating under a multi-tenant architecture, and must ensure strict data isolation between organsations whilst supporting role-based access.
 The system must be capable of exposing RESTful API's to support access such as web applications, and for future chat box integration. The backend should be efficient in supporting the whole complaint lifecycle, from the inital consumer logging in a ticket til resolvement.
 Based on my NFR the system must be able to seamlessly operate on a load of 20 million user base and yearly 10% increase without any delays whilst maintaining perfomance and reliability. An architectural decision will need to be made to take into account of a backend framework that will support these requriments set by ABC limited.
@@ -60,3 +62,4 @@ Django REST Framework was chosen because it:
 - Higher initial complexity compared to lightweight frameworks
 - Requires careful performance tuning and horizontal scaling strategies at very large scale
 - Can slow down your web app due to the added overhead.
+
